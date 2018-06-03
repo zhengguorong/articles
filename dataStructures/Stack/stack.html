@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Stack</title>
+  <script>
+    // ES5实现
+    function Stack() {
+      let items = []
+      // 添加新元素到栈顶
+      this.push = function (element) {
+        items.push(element)
+      }
+      // 删除栈顶的元素
+      this.pop = function (element) {
+        items.pop(element)
+      }
+      // 返回栈顶元素
+      this.peek = function () {
+        return items[items.length - 1]
+      }
+      // 栈是否为空
+      this.isEmpty = function () {
+        return items.length ? false : true
+      }
+      // 清空栈
+      this.clear = function () {
+        items = []
+      }
+      // 返回栈元素个数
+      this.size = function () {
+        return items.length
+      }
+      // 打印栈内容，非必要方法
+      this.print = function () {
+        console.log(items.toString())
+      }
+    }
+    let myStack = new Stack()
+    myStack.push('a')
+    myStack.print()
+  </script>
+</head>
+<body>
+  
+</body>
+</html>

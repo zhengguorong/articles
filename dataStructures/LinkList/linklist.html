@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>链表</title>
+  <script>
+    function LinkList() {
+      let length = 0 //链表长度
+      let head = null // 链表头部
+      let Node = function (element) {
+        this.element = element
+        this.next = null
+      }
+      // 链尾插入元素
+      this.append = function (element) {
+        // 创建元素
+        let node = new Node(element)
+        let current
+        // 如果链表还没有元素，执行把头部指向创建的节点
+        if (head === null) {
+          head = node
+        } else {
+          // 从队头一直寻找，直到队尾
+          current = head
+          while (current.next) {
+            current = current.next
+          }
+          // 把链尾节点的next指向新加入的节点
+          current.next = node
+        }
+        length++
+      }
+      // 在指定位置插入元素
+      this.insert = function (element, postion) {
+        if (postion > -1 && postion <= length) {
+          let node = new Node(element), // 创建节点对象
+            current = head,
+            index = 0;
+          if (postion === 0) {
+            node.next = current
+            head = node
+          } else {
+            while (index++ < postion) {
+              previous = current
+              current = current.next
+            }
+            node.next = current
+            previous.next = node
+          }
+          length++
+          return true
+        } else {
+          return false
+        }
+      }
+      // 删除指定位置元素
+      this.remoteAt = function (postion) {
+        if (postion > -1 && postion < length) {
+          let current = head,
+            previous,
+            index = 0;
+          // 删除头部,可以直接更改
+          if (postion === 0) {
+            head = current.next
+          } else {
+            while (index++ < postion) {
+              previous = current
+              current = current.next
+            }
+            previous.next = current.next
+          }
+          length--
+          return current.element
+        } else {
+          return null
+        }
+      }
+      // 从链尾删除一个元素
+      this.remove = function (element) {
+        const index = this.indexOf(element);
+        return this.removeAt(index);
+      }
+      // 返回元素位置
+      this.indexOf = function (element) {
+        let current = head
+        let index = 0
+        while (current) {
+          if (current.element === element) {
+            return index
+          }
+          index++
+          current = current.next
+        }
+        return -1
+      }
+      // 返回链表是否为空
+      this.isEmpty = function () {
+        return length === 0
+      }
+      // 返回链表长度
+      this.size = function () {
+        return length
+      }
+      // 获取链头元素
+      this.getHead = function () {
+        return head
+      }
+      // 打印链表
+      this.toString = function () {
+        if (head === null) {
+          return ''
+        } else {
+          let current = head.next;
+          let result = head.element
+          for (var i = 0; i < this.size() && current!=null; i++) {
+            result += ',' + current.element
+            current = current.next
+          }
+          return result
+        }
+      }
+    }
+
+    var myLinkList = new LinkList()
+    myLinkList.append('a')
+    myLinkList.append('c')
+    myLinkList.insert('b', 1)
+    myLinkList.remoteAt(0)
+    console.log(myLinkList.toString())
+  </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

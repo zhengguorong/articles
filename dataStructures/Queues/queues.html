@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>队列</title>
+  <script>
+    // 队列结构
+    function Queue() {
+      let items = []
+      // 加入队列
+      this.enqueue = function (element) {
+        items.push(element)
+      }
+      // 出队列
+      this.dequeue = function () {
+        return items.shift()
+      }
+      // 返回队列头部
+      this.front = function () {
+        return items[0]
+      }
+      // 队列是否为空
+      this.isEmpty = function () {
+        return items.length === 0
+      }
+      // 队列长度
+      this.size = function () {
+        return items.length
+      }
+      // 打印队列
+      this.print = function () {
+        console.log(items.toString())
+      }
+    }
+
+    // 如果你想实现一个先注册先执行的任务处理器，队列是一个比较符合的数据结构
+    function excuter() {
+      let queue = new Queue()
+      queue.enqueue('task 1')
+      queue.enqueue('task 2')
+      queue.enqueue('task 3')
+      queue.print() // 当前任务队列
+      // 执行任务
+      console.log('执行任务：' + queue.front())
+      queue.dequeue() // 执行完毕后删除任务
+      queue.print() // 执行后任务队列
+    }
+    excuter()
+  </script>
+</head>
+<body>
+  
+</body>
+</html>

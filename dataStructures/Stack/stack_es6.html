@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Stack ES6实现</title>
+  <script>
+    // 使用ES6的class模式实现时，为了实现栈里面的元素不被外部修改，通过闭包的形式创建私有变量
+    let Stack = (function () {
+      const _items = []
+      class Stack {
+        // 添加新元素到栈顶
+        push(element) {
+          _items.push(element)
+        }
+        // 删除栈顶的元素
+        pop(element) {
+          return _items.pop(element)
+        }
+        // 返回栈顶元素
+        peek() {
+          return _items[_items.length - 1]
+        }
+        // 栈是否为空
+        isEmpty() {
+          return _items.length ? false : true
+        }
+        // 清空栈
+        clear() {
+          _items = []
+        }
+        // 返回栈元素个数
+        size() {
+          return _items.length
+        }
+        // 打印栈内容，非必要方法
+        print() {
+          console.log(_items.toString())
+        }
+      }
+      return Stack
+    })()
+    let myStack = new Stack()
+    myStack.push('a')
+    myStack.print()
+  </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

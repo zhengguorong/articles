@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Stack应用</title>
+  <script>
+    // 当需要记录用户操作路径和实现操作回退时，栈的结构是一个比较符合该场景的数据结构
+    let Stack = (function () {
+      const _items = []
+      class Stack {
+        constructor(){
+          this._items = []
+        }
+        // 添加新元素到栈顶
+        push(element) {
+          _items.push(element)
+        }
+        // 删除栈顶的元素
+        pop(element) {
+          _items.pop(element)
+        }
+        // 返回栈顶元素
+        peek() {
+          return _items[_items.length - 1]
+        }
+        // 栈是否为空
+        isEmpty() {
+          return _items.length ? false : true
+        }
+        // 清空栈
+        clear() {
+          _items = []
+        }
+        // 返回栈元素个数
+        size() {
+          return _items.length
+        }
+        // 打印栈内容，非必要方法
+        print() {
+          return _items.toString()
+        }
+      }
+      return Stack
+    })()
+    // 实现用户点击按钮在页面上添加一个元素，如果用户按ctrl + z，就撤销上一步操作
+    let myStack = new Stack()
+    function userClick () {
+      myStack.push('userClick')
+      showStack()
+    }
+    // 监听用户按ctrl + z，撤销上一步操作
+    document.onkeydown = function () {
+      var keyCode = window.event.keyCode;
+      if (window.event.ctrlKey == true && window.event.keyCode == 90) {
+        myStack.pop()
+        showStack()
+      }
+    }
+    function showStack () {
+      document.querySelector('#main').innerHTML = myStack.print()
+    }
+  </script>
+</head>
+<body>
+  <button onclick="userClick()">点击添加元素</button>
+  <div id="main"></div>
+</body>
+</html>
