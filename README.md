@@ -12,7 +12,10 @@
 #### 工程化
 
 1. [rollup和webpack使用场景分析](https://github.com/zhengguorong/articles/issues/7)
-2. [《自动化持续集成》-- 方案对比](https://github.com/zhengguorong/articles/issues/14)
+2. [《自动化持续集成》-- 我真的需要吗？](https://github.com/zhengguorong/articles/issues/27)
+3. [《自动化持续集成》-- 方案对比](https://github.com/zhengguorong/articles/issues/14)
+4. [《自动化持续集成》-- gitlab CI](https://github.com/zhengguorong/articles/issues/25)
+5. [《自动化持续集成》-- github + travis CI](https://github.com/zhengguorong/articles/issues/26)
 
 
 
