@@ -16,6 +16,7 @@
 3. [《自动化持续集成》-- 方案对比](https://github.com/zhengguorong/articles/issues/14)
 4. [《自动化持续集成》-- gitlab CI](https://github.com/zhengguorong/articles/issues/25)
 5. [《自动化持续集成》-- github + travis CI](https://github.com/zhengguorong/articles/issues/26)
+6. [《自动化持续集成》-- SonarQube代码质量管控](https://github.com/zhengguorong/articles/issues/28)
 
 
 
