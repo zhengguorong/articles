@@ -26,6 +26,7 @@
 2. [《单元测试》-- jest快速入门](https://github.com/zhengguorong/articles/issues/11)
 3. [《单元测试》-- 命名规范](https://github.com/zhengguorong/articles/issues/12)
 4. [《单元测试》-- 常用mock](https://github.com/zhengguorong/articles/issues/13)
+5. [《单元测试》-- 测试小程序](https://github.com/zhengguorong/articles/issues/30)
 
 
 
