@@ -22,8 +22,8 @@
 
 #### 代码质量
 
-1. [《单元测试》--环境搭建](https://github.com/zhengguorong/articles/issues/11)
-2. [《单元测试》--命名规范](https://github.com/zhengguorong/articles/issues/12)
+1. [《单元测试》-- jest快速入门](https://github.com/zhengguorong/articles/issues/11)
+2. [《单元测试》-- 命名规范](https://github.com/zhengguorong/articles/issues/12)
 3. [《单元测试》--常用mock](https://github.com/zhengguorong/articles/issues/13)
 
 
