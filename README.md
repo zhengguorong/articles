@@ -24,8 +24,8 @@
 
 1. [《单元测试》-- 作用远超你想象](https://github.com/zhengguorong/articles/issues/29)
 2. [《单元测试》-- jest快速入门](https://github.com/zhengguorong/articles/issues/11)
-3. [《单元测试》-- 命名规范](https://github.com/zhengguorong/articles/issues/12)
-4. [《单元测试》-- 常用mock](https://github.com/zhengguorong/articles/issues/13)
+3. [《单元测试》-- 取个好名字](https://github.com/zhengguorong/articles/issues/12)
+4. [《单元测试》-- jest常用mock](https://github.com/zhengguorong/articles/issues/13)
 5. [《单元测试》-- 测试小程序](https://github.com/zhengguorong/articles/issues/30)
 
 
