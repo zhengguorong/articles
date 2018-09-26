@@ -27,6 +27,8 @@
 3. [《单元测试》-- 取个好名字](https://github.com/zhengguorong/articles/issues/12)
 4. [《单元测试》-- jest常用mock](https://github.com/zhengguorong/articles/issues/13)
 5. [《单元测试》-- 测试小程序](https://github.com/zhengguorong/articles/issues/30)
+6. [《整洁代码》-- 会讲故事的代码才是好代码](https://github.com/zhengguorong/articles/issues/31)
+7. [《设计模式应用》-- 装饰者模式实现日志记录](https://github.com/zhengguorong/articles/issues/32)
 
 
 
