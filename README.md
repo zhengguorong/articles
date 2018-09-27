@@ -12,23 +12,23 @@
 #### 工程化
 
 1. [rollup和webpack使用场景分析](https://github.com/zhengguorong/articles/issues/7)
-2. [《自动化持续集成》-- 我真的需要吗？](https://github.com/zhengguorong/articles/issues/27)
-3. [《自动化持续集成》-- 方案对比](https://github.com/zhengguorong/articles/issues/14)
-4. [《自动化持续集成》-- gitlab CI](https://github.com/zhengguorong/articles/issues/25)
-5. [《自动化持续集成》-- github + travis CI](https://github.com/zhengguorong/articles/issues/26)
-6. [《自动化持续集成》-- SonarQube代码质量管控](https://github.com/zhengguorong/articles/issues/28)
+2. [自动化持续集成系列 -- 我真的需要吗？](https://github.com/zhengguorong/articles/issues/27)
+3. [自动化持续集成系列 -- 方案对比](https://github.com/zhengguorong/articles/issues/14)
+4. [自动化持续集成系列 -- gitlab CI](https://github.com/zhengguorong/articles/issues/25)
+5. [自动化持续集成系列 -- github + travis CI](https://github.com/zhengguorong/articles/issues/26)
+6. [自动化持续集成系列 -- SonarQube代码质量管控](https://github.com/zhengguorong/articles/issues/28)
 
 
 
 #### 代码质量
 
-1. [《单元测试》-- 作用远超你想象](https://github.com/zhengguorong/articles/issues/29)
-2. [《单元测试》-- jest快速入门](https://github.com/zhengguorong/articles/issues/11)
-3. [《单元测试》-- 取个好名字](https://github.com/zhengguorong/articles/issues/12)
-4. [《单元测试》-- jest常用mock](https://github.com/zhengguorong/articles/issues/13)
-5. [《单元测试》-- 测试小程序](https://github.com/zhengguorong/articles/issues/30)
-6. [《整洁代码》-- 会讲故事的代码才是好代码](https://github.com/zhengguorong/articles/issues/31)
-7. [《设计模式应用》-- 装饰者模式实现日志记录](https://github.com/zhengguorong/articles/issues/32)
+1. [单元测试系列 -- 作用远超你想象](https://github.com/zhengguorong/articles/issues/29)
+2. [单元测试系列 -- jest快速入门](https://github.com/zhengguorong/articles/issues/11)
+3. [单元测试系列 -- 取个好名字](https://github.com/zhengguorong/articles/issues/12)
+4. [单元测试系列 -- jest常用mock](https://github.com/zhengguorong/articles/issues/13)
+5. [单元测试系列 -- 测试小程序](https://github.com/zhengguorong/articles/issues/30)
+6. [整洁代码系列-- 会讲故事的代码才是好代码](https://github.com/zhengguorong/articles/issues/31)
+7. [设计模式应用-- 装饰者模式实现日志记录](https://github.com/zhengguorong/articles/issues/32)
 
 
 
