@@ -53,9 +53,8 @@
 
 1. [从《怪诞行为学》思考团队管理](https://github.com/zhengguorong/articles/issues/9)
 2. [代码质量之破窗效应](https://github.com/zhengguorong/articles/issues/10)
-3. [IT团队如何做绩效](https://github.com/zhengguorong/articles/issues/17)
-4. [创新的核心法则](https://github.com/zhengguorong/articles/issues/19)
-5. [管理的四种职能](https://github.com/zhengguorong/articles/issues/20)
+3. [创新的核心法则](https://github.com/zhengguorong/articles/issues/19)
+4. [管理的四种职能](https://github.com/zhengguorong/articles/issues/20)
 
 
 
