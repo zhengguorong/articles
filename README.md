@@ -39,6 +39,16 @@
 
 
 
+#### 监控
+
+1. [小程序异常监控SDK设计](https://github.com/zhengguorong/xbossdebug-wechat/blob/master/design.md)
+
+
+
+#### 交互体验
+
+
+
 #### 团队管理
 
 1. [从《怪诞行为学》思考团队管理](https://github.com/zhengguorong/articles/issues/9)
