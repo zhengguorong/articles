@@ -30,23 +30,37 @@ class BinarySearchTree{
 
     }
     // 中序遍历 （树从小到大输出）
-    inOrderTraverse(callback) {
-        let inOrderTraverseNode = (node, callback) => {
+    inOrderTraverse() {
+        let inOrderTraverseNode = (node) => {
             if (node !== null) {
-                inOrderTraverseNode(node.left, callback);
-                callback(node.key);
-                inOrderTraverseNode(node.right, callback);
+                inOrderTraverseNode(node.left);
+                console.log(node.key)
+                inOrderTraverseNode(node.right);
             }
         }
-        inOrderTraverseNode(this.root, callback);
+        inOrderTraverseNode(this.root);
     }
     // 先序遍历 （输出树的结构）
     preOrderTraverse() {
-
+        let preOrderTraverseNode = (node) => {
+            if (node !== null) {
+                console.log(node.key)
+                preOrderTraverseNode(node.left)
+                preOrderTraverseNode(node.right)
+            }
+        }
+        preOrderTraverseNode(this.root);
     }
-    // 后序遍历 
+    // 后序遍历 (计算一个目录和它的子目录中所有文件所占空间大小)
     postOrderTraverse() {
-
+        let postOrderTraverseNode = (node) => {
+            if (node !== null) {
+                postOrderTraverseNode(node.left)
+                postOrderTraverseNode(node.right)
+                console.log(node.key)
+            }
+        }
+        postOrderTraverseNode(this.root);
     }
     min() {
 
