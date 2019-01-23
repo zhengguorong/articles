@@ -27,7 +27,19 @@ class BinarySearchTree{
 
     }
     search(key) {
-
+        let searchNode = (node, key) => {
+            if (node === null) {
+                return;
+            }
+            if (key < node.key) {
+                return searchNode(node.left, key);
+            } else if (key > node.key) {
+                return searchNode(node.right, key);
+            } else {
+                return true;
+            }
+        }
+        return searchNode(this.root, key)
     }
     // 中序遍历 （树从小到大输出）
     inOrderTraverse() {
@@ -63,13 +75,67 @@ class BinarySearchTree{
         postOrderTraverseNode(this.root);
     }
     min() {
-
+        let minNode = (node) => {
+            if (node) {
+                while(node && node.left !== null) {
+                    node = node.left;
+                }
+                return node.key;
+            } else {
+                return null;
+            }
+        }
+        return minNode(this.root);
     }
     max() {
-
+        let maxNode = (node) => {
+            if (node) {
+                while(node && node.right !== null) {
+                    node = node.right;
+                }
+                return node.key;
+            } else {
+                return null;
+            }
+        }
+        return maxNode(this.root);
     }
     remove(key) {
-
+        let findMinNode = (node) => {
+            while (node && node.left !== null) {
+                node = node.left;
+            }
+            return node;
+        }
+        let removeNode = (node, key) => {
+            if (node === null) {
+                return null;
+            }
+            if (key < node.key) {
+                node.left = removeNode(node.left, key);
+                return node;
+            } else if(key > node.key) {
+                node.right = removeNode(node.right, key);
+                return node;
+            } else {
+                if (node.left === null && node.right === null) {
+                    node = null;
+                    return node;
+                }
+                if (node.left === null) {
+                    node = node.right;
+                    return node;
+                } else if (node.right === null) {
+                    node = node.left;
+                    return node;
+                }
+                let aux = findMinNode(node.right);
+                node.key = aux.key;
+                node.right = removeNode(node.right, aux.key);
+                return node;
+            }
+        }
+        return removeNode(this.root, key)
     }
 }
 

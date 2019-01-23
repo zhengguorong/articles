@@ -42,6 +42,7 @@
 #### 监控
 
 1. [小程序异常监控SDK设计](https://github.com/zhengguorong/xbossdebug-wechat/blob/master/design.md)
+2. [小程序从手动埋点到自动埋点](https://github.com/zhengguorong/articles/issues/34)
 
 
 
