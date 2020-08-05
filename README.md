@@ -30,6 +30,9 @@
 6. [整洁代码系列-- 会讲故事的代码才是好代码](https://github.com/zhengguorong/articles/issues/31)
 7. [设计模式应用-- 装饰者模式实现日志记录](https://github.com/zhengguorong/articles/issues/32)
 
+#### 自动测试
+1. [利用端到端测试实现自动批改作业](https://github.com/zhengguorong/articles/issues/39)
+
 
 
 #### 性能
